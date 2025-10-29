@@ -1,0 +1,10 @@
+[
+  {
+    "id": "client-1",
+    "name": "Cliente Demo",
+    "phone": "+5511999999999",
+    "status": "pending",
+    "createdAt": "2024-03-01T12:00:00.000Z",
+    "validatedAt": null
+  }
+]

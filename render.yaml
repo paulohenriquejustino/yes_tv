@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: yes-tv-api
+    env: node
+    plan: free
+    rootDir: server
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
+    autoDeploy: true
+ 
