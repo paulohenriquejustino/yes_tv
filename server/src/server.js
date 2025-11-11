@@ -4,6 +4,7 @@ const express = require("express");
 const cors = require("cors");
 const morgan = require("morgan");
 const crypto = require("crypto");
+const os = require("os");
 
 const { readJson, writeJson } = require("./storage");
 
@@ -11,10 +12,22 @@ const PORT = process.env.PORT || 3000;
 const OTP_TTL_MS = 5 * 60 * 1000;
 const MAX_LOG_ENTRIES = 200;
 
+const BODY_LIMIT = process.env.BODY_LIMIT || "512mb";
+
 const app = express();
 
 app.use(cors());
-app.use(express.json({ limit: "2mb" }));
+app.use(
+  express.json({
+    limit: BODY_LIMIT,
+  })
+);
+app.use(
+  express.urlencoded({
+    extended: true,
+    limit: BODY_LIMIT,
+  })
+);
 app.use(morgan("dev"));
 
 const otpCache = new Map();
@@ -53,6 +66,77 @@ function loadCatalog() {
 
 function saveCatalog(items) {
   writeJson("catalog.json", items);
+}
+
+function catalogKey(item) {
+  if (!item || typeof item !== "object") {
+    return null;
+  }
+  if (item.id !== undefined && item.id !== null && item.id !== "") {
+    return `id:${item.id}`;
+  }
+  if (typeof item.title === "string" && item.title.trim()) {
+    return `title:${item.title.trim().toLowerCase()}`;
+  }
+  return null;
+}
+
+function mergeCatalogItems(existing, incoming, options = {}) {
+  const replace = options.replace === true;
+  const merged = [];
+  const positionByKey = new Map();
+  const existingKeys = new Set();
+  const incomingKeys = new Set();
+  let autoIndex = 0;
+
+  function registerExisting(rawItem) {
+    if (!rawItem || typeof rawItem !== "object") {
+      return;
+    }
+    const item = { ...rawItem };
+    const key = catalogKey(item) ?? `auto:${autoIndex++}`;
+    existingKeys.add(key);
+    if (replace) {
+      return;
+    }
+    if (positionByKey.has(key)) {
+      merged[positionByKey.get(key)] = item;
+    } else {
+      positionByKey.set(key, merged.length);
+      merged.push(item);
+    }
+  }
+
+  existing.forEach(registerExisting);
+
+  function upsert(rawItem) {
+    if (!rawItem || typeof rawItem !== "object") {
+      return;
+    }
+    const item = { ...rawItem };
+    const key = catalogKey(item) ?? `auto:${autoIndex++}`;
+    incomingKeys.add(key);
+    if (positionByKey.has(key)) {
+      const index = positionByKey.get(key);
+      merged[index] = item;
+    } else {
+      positionByKey.set(key, merged.length);
+      merged.push(item);
+    }
+  }
+
+  incoming.forEach(upsert);
+
+  const stats = { added: 0, updated: 0 };
+  incomingKeys.forEach((key) => {
+    if (existingKeys.has(key)) {
+      stats.updated += 1;
+    } else {
+      stats.added += 1;
+    }
+  });
+
+  return { items: merged, stats };
 }
 
 function loadClients() {
@@ -97,6 +181,10 @@ app.get("/health", (_req, res) => {
   res.json({ status: "ok" });
 });
 
+app.get("/", (_req, res) => {
+  res.json({ status: "ok", service: "YES TV API" });
+});
+
 app.get("/catalog", (_req, res) => {
   res.json(loadCatalog());
 });
@@ -106,13 +194,34 @@ app.get("/admin/catalog", (_req, res) => {
 });
 
 app.post("/admin/catalog", (req, res) => {
-  const payload = req.body;
-  const items = payload && Array.isArray(payload.items) ? payload.items : null;
+  const payload = req.body ?? {};
+  const items = Array.isArray(payload.items) ? payload.items : null;
   if (!items) {
     return res.status(400).json({ error: "Campo 'items' deve ser uma lista." });
   }
-  saveCatalog(items);
-  return res.json({ ok: true, count: items.length });
+  const mode =
+    typeof payload.mode === "string"
+      ? payload.mode.toLowerCase()
+      : "replace";
+  const replace = mode !== "merge";
+  const current = loadCatalog();
+  const { items: merged, stats } = mergeCatalogItems(current, items, {
+    replace,
+  });
+  saveCatalog(merged);
+  return res.json({
+    ok: true,
+    total: merged.length,
+    received: items.length,
+    added: stats.added,
+    updated: stats.updated,
+    mode: replace ? "replace" : "merge",
+  });
+});
+
+app.delete("/admin/catalog", (_req, res) => {
+  saveCatalog([]);
+  res.json({ ok: true, total: 0 });
 });
 
 app.get("/logs/playback", (_req, res) => {
@@ -224,4 +333,30 @@ app.use((err, _req, res, _next) => {
 
 app.listen(PORT, () => {
   console.log(`YES TV API rodando na porta ${PORT}`);
+  logAccessUrls();
 });
+
+function logAccessUrls() {
+  const interfaces = os.networkInterfaces();
+  const lanAddresses = [];
+  Object.values(interfaces).forEach((entries) => {
+    entries
+      ?.filter(
+        (entry) => entry.family === "IPv4" && entry.internal !== true && entry.address,
+      )
+      .forEach((entry) => lanAddresses.push(entry.address));
+  });
+
+  const uniqueLan = [...new Set(lanAddresses)];
+  if (uniqueLan.length) {
+    console.log("Acesse pela rede local:");
+    uniqueLan.forEach((address) => {
+      console.log(`  → http://${address}:${PORT}`);
+    });
+  } else {
+    console.log("Nenhum endereço de rede local detectado.");
+  }
+  console.log("Emuladores conhecidos:");
+  console.log(`  → Android Emulator: http://10.0.2.2:${PORT}`);
+  console.log(`  → iOS Simulator:   http://127.0.0.1:${PORT}`);
+}
