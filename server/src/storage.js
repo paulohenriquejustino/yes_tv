@@ -3,7 +3,13 @@
 const fs = require("fs");
 const path = require("path");
 
-const dataRoot = path.join(__dirname, "..", "data");
+const dataRoot = process.env.DATA_ROOT
+  ? path.resolve(process.env.DATA_ROOT)
+  : path.join(__dirname, "..", "data");
+
+if (!fs.existsSync(dataRoot)) {
+  fs.mkdirSync(dataRoot, { recursive: true });
+}
 
 function _safePath(filename) {
   return path.join(dataRoot, filename);

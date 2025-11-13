@@ -1,1 +1,1554 @@
-[]
+[
+  {
+    "id": "215d85ef-f394-40bc-a374-561c80452f38",
+    "event": "manual_switch",
+    "source": "vault://OPsBtbka21rLjf3_",
+    "contentId": 64808,
+    "reason": null,
+    "timestamp": "2025-11-11T16:50:39.301Z"
+  },
+  {
+    "id": "ac15af32-820e-434d-bcb7-4802a893077f",
+    "event": "all_sources_failed",
+    "source": "",
+    "contentId": 64808,
+    "reason": null,
+    "timestamp": "2025-11-11T16:50:37.725Z"
+  },
+  {
+    "id": "130e3331-4b5e-402c-8d3e-7af96bc38880",
+    "event": "source_fail",
+    "source": "vault://ansgnyH_MaZdrNaV",
+    "contentId": 64808,
+    "reason": "init_error",
+    "timestamp": "2025-11-11T16:50:37.724Z"
+  },
+  {
+    "id": "25c0aa3b-5b7a-4b4c-8556-5936098f5464",
+    "event": "source_fail",
+    "source": "vault://OPsBtbka21rLjf3_",
+    "contentId": 64808,
+    "reason": "init_error",
+    "timestamp": "2025-11-11T16:50:33.212Z"
+  },
+  {
+    "id": "481145de-2ed4-46e2-ae3c-e6cae5fb0b09",
+    "event": "manual_switch",
+    "source": "vault://OPsBtbka21rLjf3_",
+    "contentId": 64808,
+    "reason": null,
+    "timestamp": "2025-11-11T16:50:28.617Z"
+  },
+  {
+    "id": "a7bfeb9a-376f-4993-bc55-7081c75f172d",
+    "event": "all_sources_failed",
+    "source": "",
+    "contentId": 64808,
+    "reason": null,
+    "timestamp": "2025-11-11T16:50:27.058Z"
+  },
+  {
+    "id": "36a3e840-71a8-4a2d-ba26-a612e60e646e",
+    "event": "source_fail",
+    "source": "vault://ansgnyH_MaZdrNaV",
+    "contentId": 64808,
+    "reason": "precheck_failed",
+    "timestamp": "2025-11-11T16:50:27.057Z"
+  },
+  {
+    "id": "52e3daa7-aefc-4652-b305-877a93c76456",
+    "event": "source_fail",
+    "source": "vault://OPsBtbka21rLjf3_",
+    "contentId": 64808,
+    "reason": "precheck_failed",
+    "timestamp": "2025-11-11T16:50:26.645Z"
+  },
+  {
+    "id": "2edbdf2b-ca14-494c-8039-ef21a865d87a",
+    "event": "manual_retry",
+    "source": "vault://EmTHkWeX7hHpmQY_",
+    "contentId": 1165,
+    "reason": null,
+    "timestamp": "2025-11-11T16:50:10.842Z"
+  },
+  {
+    "id": "f283d648-c4e6-468d-952c-03a434968569",
+    "event": "all_sources_failed",
+    "source": "",
+    "contentId": 1165,
+    "reason": null,
+    "timestamp": "2025-11-11T16:50:09.647Z"
+  },
+  {
+    "id": "d2ebb78a-668a-4a1d-aca8-34f9c39b8682",
+    "event": "source_fail",
+    "source": "vault://EmTHkWeX7hHpmQY_",
+    "contentId": 1165,
+    "reason": "precheck_failed",
+    "timestamp": "2025-11-11T16:50:09.645Z"
+  },
+  {
+    "id": "ede70dba-3b23-4c79-8455-0967ccdbd743",
+    "event": "manual_retry",
+    "source": "vault://X1nVBL4p76Ub4wiN",
+    "contentId": 1170,
+    "reason": null,
+    "timestamp": "2025-11-11T16:50:01.679Z"
+  },
+  {
+    "id": "13b31086-44ae-4c67-8c4d-5c6cc9da66f3",
+    "event": "all_sources_failed",
+    "source": "",
+    "contentId": 1170,
+    "reason": null,
+    "timestamp": "2025-11-11T16:49:59.548Z"
+  },
+  {
+    "id": "769aa83d-2b74-4b9b-a9dc-b843ef10ebaf",
+    "event": "source_fail",
+    "source": "vault://X1nVBL4p76Ub4wiN",
+    "contentId": 1170,
+    "reason": "precheck_failed",
+    "timestamp": "2025-11-11T16:49:59.546Z"
+  },
+  {
+    "id": "ea3cb1ef-30e5-4382-b57a-6dec9cb18676",
+    "event": "all_sources_failed",
+    "source": "",
+    "contentId": 1178,
+    "reason": null,
+    "timestamp": "2025-11-11T16:49:52.410Z"
+  },
+  {
+    "id": "2782ac88-43e5-45e0-826e-37f1cd4eda6f",
+    "event": "source_fail",
+    "source": "vault://MLhG1qHZOgfrRkNb",
+    "contentId": 1178,
+    "reason": "timeout",
+    "timestamp": "2025-11-11T16:49:52.409Z"
+  },
+  {
+    "id": "d9ba54b9-4900-4170-94e7-98605c844fa0",
+    "event": "all_sources_failed",
+    "source": "",
+    "contentId": 1178,
+    "reason": null,
+    "timestamp": "2025-11-11T16:49:50.611Z"
+  },
+  {
+    "id": "44d4be8b-2622-49df-9520-c25beed00fbc",
+    "event": "source_fail",
+    "source": "vault://MLhG1qHZOgfrRkNb",
+    "contentId": 1178,
+    "reason": "init_error",
+    "timestamp": "2025-11-11T16:49:50.610Z"
+  },
+  {
+    "id": "1ee03c56-62ca-4d8a-bb27-0c9ec89e6a14",
+    "event": "manual_retry",
+    "source": "vault://MLhG1qHZOgfrRkNb",
+    "contentId": 1178,
+    "reason": null,
+    "timestamp": "2025-11-11T16:49:46.046Z"
+  },
+  {
+    "id": "96cbc33b-17bf-46cc-a494-06b633b7748b",
+    "event": "all_sources_failed",
+    "source": "",
+    "contentId": 1178,
+    "reason": null,
+    "timestamp": "2025-11-11T16:49:42.021Z"
+  },
+  {
+    "id": "7392abd9-d44c-42e4-a448-fc79b834125c",
+    "event": "source_fail",
+    "source": "vault://MLhG1qHZOgfrRkNb",
+    "contentId": 1178,
+    "reason": "precheck_failed",
+    "timestamp": "2025-11-11T16:49:42.018Z"
+  },
+  {
+    "id": "68d99ab4-ad41-47b7-a7ce-c7dfe7741990",
+    "event": "play_start",
+    "source": "vault://HjUKnSHHiEIZoTW9",
+    "contentId": 709,
+    "reason": null,
+    "timestamp": "2025-11-11T16:26:07.458Z"
+  },
+  {
+    "id": "2c9831d8-c44b-4c29-b541-10a2179b5ecd",
+    "event": "play_start",
+    "source": "vault://E266TI82tmLge5L_",
+    "contentId": 1119,
+    "reason": null,
+    "timestamp": "2025-11-11T16:25:49.061Z"
+  },
+  {
+    "id": "0c6a0526-0d73-494c-8abf-4599d5c64249",
+    "event": "play_start",
+    "source": "vault://P6p3l2erf0UhygMZ",
+    "contentId": 575,
+    "reason": null,
+    "timestamp": "2025-11-11T16:15:42.953Z"
+  },
+  {
+    "id": "485efb89-8279-4b31-ad78-2cbc39f4dc64",
+    "event": "manual_retry",
+    "source": "vault://27_pA3wgGHjMgaHd",
+    "contentId": 460,
+    "reason": null,
+    "timestamp": "2025-11-11T16:15:32.849Z"
+  },
+  {
+    "id": "592edbe0-ec1e-43fe-9b10-ef2ad3264ae6",
+    "event": "all_sources_failed",
+    "source": "",
+    "contentId": 460,
+    "reason": null,
+    "timestamp": "2025-11-11T16:15:32.042Z"
+  },
+  {
+    "id": "2740c05b-de71-4cff-b8e5-552e6ad01220",
+    "event": "source_fail",
+    "source": "vault://27_pA3wgGHjMgaHd",
+    "contentId": 460,
+    "reason": "timeout",
+    "timestamp": "2025-11-11T16:15:32.040Z"
+  },
+  {
+    "id": "6d9bae82-64bc-43a5-8d6e-3a9eb2788550",
+    "event": "all_sources_failed",
+    "source": "",
+    "contentId": 460,
+    "reason": null,
+    "timestamp": "2025-11-11T16:15:30.982Z"
+  },
+  {
+    "id": "a35f42c4-2c50-4143-a240-b04ab6a2d4ec",
+    "event": "source_fail",
+    "source": "vault://27_pA3wgGHjMgaHd",
+    "contentId": 460,
+    "reason": "init_error",
+    "timestamp": "2025-11-11T16:15:30.977Z"
+  },
+  {
+    "id": "e6417693-a3f3-4f45-803b-dabb86e8bd6a",
+    "event": "play_start",
+    "source": "vault://rJQh1RDnHLId-lib",
+    "contentId": 1120,
+    "reason": null,
+    "timestamp": "2025-11-11T16:15:01.741Z"
+  },
+  {
+    "id": "e556a0b7-7c89-4b1f-bd02-7675cf447217",
+    "event": "play_start",
+    "source": "vault://g4PvUXNr51xvH53N",
+    "contentId": 148,
+    "reason": null,
+    "timestamp": "2025-11-11T16:14:50.404Z"
+  },
+  {
+    "id": "6c878d8f-74de-4376-8a50-aa9c4f286da9",
+    "event": "play_start",
+    "source": "vault://WDQuQarMWnwSOfes",
+    "contentId": 450,
+    "reason": null,
+    "timestamp": "2025-11-11T15:56:03.679Z"
+  },
+  {
+    "id": "6be43e39-0632-4d48-8bc9-c9e21b92051d",
+    "event": "play_start",
+    "source": "vault://ThZyO73aHKVizom1",
+    "contentId": 153,
+    "reason": null,
+    "timestamp": "2025-11-11T15:54:14.836Z"
+  },
+  {
+    "id": "a49e5ad6-8073-4bef-bb49-cddfb5fa19af",
+    "event": "play_start",
+    "source": "vault://gKLiiVnK5GPDE1tM",
+    "contentId": 148,
+    "reason": null,
+    "timestamp": "2025-11-11T15:52:45.771Z"
+  },
+  {
+    "id": "12bd4ff1-a6b2-468a-859c-27b5d2193d6d",
+    "event": "play_start",
+    "source": "vault://oP-0LOaJZtxApWhD",
+    "contentId": 1119,
+    "reason": null,
+    "timestamp": "2025-11-11T15:44:16.969Z"
+  },
+  {
+    "id": "f58356a2-606f-4703-8c25-36ebf7fecafd",
+    "event": "play_start",
+    "source": "vault://3kyKsnwSfWRPW_or",
+    "contentId": 1120,
+    "reason": null,
+    "timestamp": "2025-11-11T15:43:10.686Z"
+  },
+  {
+    "id": "a73873de-6b89-4733-8f18-6dd73effbc23",
+    "event": "play_start",
+    "source": "vault://8GWd8JsPqu6sVM0Q",
+    "contentId": 1106,
+    "reason": null,
+    "timestamp": "2025-11-11T02:54:58.973Z"
+  },
+  {
+    "id": "c807353f-2dde-4e02-ace8-2006bafd0459",
+    "event": "all_sources_failed",
+    "source": "",
+    "contentId": 1106,
+    "reason": null,
+    "timestamp": "2025-11-11T02:54:58.381Z"
+  },
+  {
+    "id": "1dd01904-35f7-4186-95be-354b498d601b",
+    "event": "source_fail",
+    "source": "vault://8GWd8JsPqu6sVM0Q",
+    "contentId": 1106,
+    "reason": "timeout",
+    "timestamp": "2025-11-11T02:54:58.373Z"
+  },
+  {
+    "id": "30c103c3-9a35-4329-a563-9d5ea3a572f8",
+    "event": "play_start",
+    "source": "vault://aKpl7PBjeWHbht8J",
+    "contentId": 1120,
+    "reason": null,
+    "timestamp": "2025-11-11T02:53:50.360Z"
+  },
+  {
+    "id": "60c704a5-a25f-4826-9d6b-45301c9cd3f5",
+    "event": "play_start",
+    "source": "vault://DaFOox_NQtOJGwzH",
+    "contentId": 1114,
+    "reason": null,
+    "timestamp": "2025-11-11T02:42:23.173Z"
+  },
+  {
+    "id": "e0b310f7-2624-41d8-aaa7-01340cdbbe7b",
+    "event": "all_sources_failed",
+    "source": "",
+    "contentId": 1114,
+    "reason": null,
+    "timestamp": "2025-11-11T02:42:22.234Z"
+  },
+  {
+    "id": "3eda82b6-b28b-4ada-acac-0ab20ea0ae07",
+    "event": "source_fail",
+    "source": "vault://DaFOox_NQtOJGwzH",
+    "contentId": 1114,
+    "reason": "timeout",
+    "timestamp": "2025-11-11T02:42:22.221Z"
+  },
+  {
+    "id": "5e18719f-4e29-4e69-8d14-1b7003d7bbfe",
+    "event": "play_start",
+    "source": "vault://rIwzN3NT9AofS37M",
+    "contentId": 1120,
+    "reason": null,
+    "timestamp": "2025-11-11T02:36:02.869Z"
+  },
+  {
+    "id": "320f31c4-48c6-48f3-863f-024773cfaed1",
+    "event": "all_sources_failed",
+    "source": "",
+    "contentId": 187600,
+    "reason": null,
+    "timestamp": "2025-11-11T02:34:00.477Z"
+  },
+  {
+    "id": "1749fc37-a1ff-4d65-b9a2-a803510a8c15",
+    "event": "source_fail",
+    "source": "vault://npVOiAVjZXdBf0Tt",
+    "contentId": 187600,
+    "reason": "timeout",
+    "timestamp": "2025-11-11T02:34:00.474Z"
+  },
+  {
+    "id": "68db0e63-fb20-43f2-bda0-115ab522912e",
+    "event": "all_sources_failed",
+    "source": "",
+    "contentId": 187600,
+    "reason": null,
+    "timestamp": "2025-11-11T02:33:58.690Z"
+  },
+  {
+    "id": "67f444d3-0c77-44dd-8072-48c4c5579d6d",
+    "event": "source_fail",
+    "source": "vault://npVOiAVjZXdBf0Tt",
+    "contentId": 187600,
+    "reason": "init_error",
+    "timestamp": "2025-11-11T02:33:58.688Z"
+  },
+  {
+    "id": "8a48a4be-f94d-4d15-810e-59740bd90ef3",
+    "event": "manual_retry",
+    "source": "vault://npVOiAVjZXdBf0Tt",
+    "contentId": 187600,
+    "reason": null,
+    "timestamp": "2025-11-11T02:33:54.084Z"
+  },
+  {
+    "id": "cdae19a3-38bd-40c3-b1bc-757b1494e661",
+    "event": "all_sources_failed",
+    "source": "",
+    "contentId": 187600,
+    "reason": null,
+    "timestamp": "2025-11-11T02:33:52.541Z"
+  },
+  {
+    "id": "70e567db-bff8-49fa-aa3d-93de34fc578f",
+    "event": "source_fail",
+    "source": "vault://npVOiAVjZXdBf0Tt",
+    "contentId": 187600,
+    "reason": "precheck_failed",
+    "timestamp": "2025-11-11T02:33:52.538Z"
+  },
+  {
+    "id": "3573b78f-54a9-4e10-85ce-86ad8fc35594",
+    "event": "all_sources_failed",
+    "source": "",
+    "contentId": 13172,
+    "reason": null,
+    "timestamp": "2025-11-11T02:33:35.897Z"
+  },
+  {
+    "id": "ef441a69-6dc8-457b-a758-aeb6385bb766",
+    "event": "source_fail",
+    "source": "vault://k6XvSt1Kwnfhlut4",
+    "contentId": 13172,
+    "reason": "timeout",
+    "timestamp": "2025-11-11T02:33:35.896Z"
+  },
+  {
+    "id": "4ef1edee-8176-4164-904a-088f7df3bed6",
+    "event": "all_sources_failed",
+    "source": "",
+    "contentId": 13172,
+    "reason": null,
+    "timestamp": "2025-11-11T02:33:34.130Z"
+  },
+  {
+    "id": "643d250b-b53a-497d-9145-1f0f12563d50",
+    "event": "source_fail",
+    "source": "vault://k6XvSt1Kwnfhlut4",
+    "contentId": 13172,
+    "reason": "init_error",
+    "timestamp": "2025-11-11T02:33:34.128Z"
+  },
+  {
+    "id": "1a027c31-6ad6-4727-9994-103546ff52d0",
+    "event": "all_sources_failed",
+    "source": "",
+    "contentId": 246731,
+    "reason": null,
+    "timestamp": "2025-11-11T02:33:16.983Z"
+  },
+  {
+    "id": "7526e872-78b5-4c0b-bb3a-fa802b80c88b",
+    "event": "source_fail",
+    "source": "vault://AOuMnjPyn6UNpops",
+    "contentId": 246731,
+    "reason": "precheck_failed",
+    "timestamp": "2025-11-11T02:33:16.977Z"
+  },
+  {
+    "id": "894be5ba-0eb8-4f1d-b733-1e0f068ca155",
+    "event": "all_sources_failed",
+    "source": "",
+    "contentId": 246719,
+    "reason": null,
+    "timestamp": "2025-11-11T02:33:14.467Z"
+  },
+  {
+    "id": "42a28ee0-47c8-490c-a833-6d952d5de774",
+    "event": "source_fail",
+    "source": "vault://Ir-1bKPGRsYW3c2N",
+    "contentId": 246719,
+    "reason": "timeout",
+    "timestamp": "2025-11-11T02:33:14.463Z"
+  },
+  {
+    "id": "cfd984ba-7147-43b6-93f6-64194a6f4588",
+    "event": "all_sources_failed",
+    "source": "",
+    "contentId": 246719,
+    "reason": null,
+    "timestamp": "2025-11-11T02:33:12.568Z"
+  },
+  {
+    "id": "003c1572-5139-4c08-a9eb-bc00c214bed9",
+    "event": "source_fail",
+    "source": "vault://Ir-1bKPGRsYW3c2N",
+    "contentId": 246719,
+    "reason": "init_error",
+    "timestamp": "2025-11-11T02:33:12.566Z"
+  },
+  {
+    "id": "82ce01ed-cf3d-4f06-b8fd-f8b6d72c24be",
+    "event": "manual_retry",
+    "source": "vault://Ir-1bKPGRsYW3c2N",
+    "contentId": 246719,
+    "reason": null,
+    "timestamp": "2025-11-11T02:33:08.116Z"
+  },
+  {
+    "id": "b44f2860-ec76-4d9e-999e-97b248998821",
+    "event": "all_sources_failed",
+    "source": "",
+    "contentId": 246719,
+    "reason": null,
+    "timestamp": "2025-11-11T02:33:04.703Z"
+  },
+  {
+    "id": "769a42ab-4ccf-4f42-beda-069cb6c28063",
+    "event": "source_fail",
+    "source": "vault://Ir-1bKPGRsYW3c2N",
+    "contentId": 246719,
+    "reason": "precheck_failed",
+    "timestamp": "2025-11-11T02:33:04.697Z"
+  },
+  {
+    "id": "63185e2f-898f-4d51-99bb-bcd4760a45a0",
+    "event": "all_sources_failed",
+    "source": "",
+    "contentId": 163,
+    "reason": null,
+    "timestamp": "2025-11-11T02:27:46.639Z"
+  },
+  {
+    "id": "448c25f7-1e86-44f3-8361-010c1cea9791",
+    "event": "source_fail",
+    "source": "vault://LUHb9iBTNwiPUtN_",
+    "contentId": 163,
+    "reason": "precheck_failed",
+    "timestamp": "2025-11-11T02:27:46.635Z"
+  },
+  {
+    "id": "841244a1-a5c7-451f-a043-6110779dbbc3",
+    "event": "play_start",
+    "source": "vault://S3jrH9V5Nizq_XXW",
+    "contentId": 290,
+    "reason": null,
+    "timestamp": "2025-11-11T02:27:23.318Z"
+  },
+  {
+    "id": "30436995-661e-4813-8a78-e2f49a9c7d37",
+    "event": "all_sources_failed",
+    "source": "",
+    "contentId": 148,
+    "reason": null,
+    "timestamp": "2025-11-11T02:27:08.561Z"
+  },
+  {
+    "id": "fbfa08cd-5795-43c7-b465-894e6460de37",
+    "event": "source_fail",
+    "source": "vault://bWd53v12bB4SkIFL",
+    "contentId": 148,
+    "reason": "precheck_failed",
+    "timestamp": "2025-11-11T02:27:08.559Z"
+  },
+  {
+    "id": "c35bfe62-9a44-4ceb-9b50-45203bf65b07",
+    "event": "manual_retry",
+    "source": "vault://bWd53v12bB4SkIFL",
+    "contentId": 148,
+    "reason": null,
+    "timestamp": "2025-11-11T02:27:07.908Z"
+  },
+  {
+    "id": "852bc8ce-56b2-479b-a6f2-44b5a743eb0a",
+    "event": "all_sources_failed",
+    "source": "",
+    "contentId": 148,
+    "reason": null,
+    "timestamp": "2025-11-11T02:27:03.039Z"
+  },
+  {
+    "id": "c70407c6-c9ee-4e68-8e6e-2779ea00def6",
+    "event": "source_fail",
+    "source": "vault://bWd53v12bB4SkIFL",
+    "contentId": 148,
+    "reason": "precheck_failed",
+    "timestamp": "2025-11-11T02:27:03.031Z"
+  },
+  {
+    "id": "ec64aefe-b290-490b-ba53-cca448eef5b4",
+    "event": "all_sources_failed",
+    "source": "",
+    "contentId": 861,
+    "reason": null,
+    "timestamp": "2025-10-31T17:39:39.430Z"
+  },
+  {
+    "id": "b7633855-d005-4bc0-a09b-4948d692836b",
+    "event": "source_fail",
+    "source": "vault://XmF31kwDLuYziATm",
+    "contentId": 861,
+    "reason": "init_error",
+    "timestamp": "2025-10-31T17:39:39.421Z"
+  },
+  {
+    "id": "b923b870-1f59-4aff-b3b2-56ad6672cdfa",
+    "event": "all_sources_failed",
+    "source": "",
+    "contentId": 865,
+    "reason": null,
+    "timestamp": "2025-10-31T17:39:24.575Z"
+  },
+  {
+    "id": "91a85838-8b92-491e-aeb8-ea7e2ce19730",
+    "event": "source_fail",
+    "source": "vault://PWzuiCPVJtciKOhd",
+    "contentId": 865,
+    "reason": "timeout",
+    "timestamp": "2025-10-31T17:39:24.528Z"
+  },
+  {
+    "id": "9a3703f6-4af1-468a-ba98-65e152d024ee",
+    "event": "all_sources_failed",
+    "source": "",
+    "contentId": 865,
+    "reason": null,
+    "timestamp": "2025-10-31T17:39:23.035Z"
+  },
+  {
+    "id": "c783f296-49eb-409d-9e3c-014b07017135",
+    "event": "source_fail",
+    "source": "vault://PWzuiCPVJtciKOhd",
+    "contentId": 865,
+    "reason": "init_error",
+    "timestamp": "2025-10-31T17:39:23.030Z"
+  },
+  {
+    "id": "f18a8f11-117a-4ed7-a305-3b35d8d40f2b",
+    "event": "all_sources_failed",
+    "source": "",
+    "contentId": 857,
+    "reason": null,
+    "timestamp": "2025-10-31T17:23:15.633Z"
+  },
+  {
+    "id": "f065431a-7c39-4b54-b59c-76651530f19e",
+    "event": "source_fail",
+    "source": "vault://iIeqLB5hkcIK4hSL",
+    "contentId": 857,
+    "reason": "timeout",
+    "timestamp": "2025-10-31T17:23:15.631Z"
+  },
+  {
+    "id": "38896766-ce6e-420c-9b14-5e203ee5314b",
+    "event": "all_sources_failed",
+    "source": "",
+    "contentId": 857,
+    "reason": null,
+    "timestamp": "2025-10-31T17:23:13.974Z"
+  },
+  {
+    "id": "752c8c06-13b8-47a2-9504-63ec33b1707d",
+    "event": "source_fail",
+    "source": "vault://iIeqLB5hkcIK4hSL",
+    "contentId": 857,
+    "reason": "init_error",
+    "timestamp": "2025-10-31T17:23:13.971Z"
+  },
+  {
+    "id": "2236332d-0c4f-4bf1-aeee-dbab445de1df",
+    "event": "all_sources_failed",
+    "source": "",
+    "contentId": 865,
+    "reason": null,
+    "timestamp": "2025-10-31T17:23:05.418Z"
+  },
+  {
+    "id": "da756b3e-7b3e-4c73-9fd9-ac55ec6af5ed",
+    "event": "source_fail",
+    "source": "vault://AQeXl_VqDivIdv3M",
+    "contentId": 865,
+    "reason": "timeout",
+    "timestamp": "2025-10-31T17:23:05.375Z"
+  },
+  {
+    "id": "5580c737-3e77-4cec-bcef-6efe38a5211e",
+    "event": "all_sources_failed",
+    "source": "",
+    "contentId": 865,
+    "reason": null,
+    "timestamp": "2025-10-31T17:23:03.572Z"
+  },
+  {
+    "id": "68697a02-1fbc-44b7-97cd-c221699bef02",
+    "event": "source_fail",
+    "source": "vault://AQeXl_VqDivIdv3M",
+    "contentId": 865,
+    "reason": "init_error",
+    "timestamp": "2025-10-31T17:23:03.568Z"
+  },
+  {
+    "id": "e7cb0950-8f2a-4a92-8866-089009c70990",
+    "event": "all_sources_failed",
+    "source": "",
+    "contentId": 12929,
+    "reason": null,
+    "timestamp": "2025-10-31T17:22:40.894Z"
+  },
+  {
+    "id": "33599c5d-2752-44a7-af51-2309a9141795",
+    "event": "source_fail",
+    "source": "vault://89Uw7opn4D3f5BYp",
+    "contentId": 12929,
+    "reason": "timeout",
+    "timestamp": "2025-10-31T17:22:40.887Z"
+  },
+  {
+    "id": "eab201ca-342d-4515-bb7d-4309c86da13c",
+    "event": "all_sources_failed",
+    "source": "",
+    "contentId": 12929,
+    "reason": null,
+    "timestamp": "2025-10-31T17:22:39.206Z"
+  },
+  {
+    "id": "e5315007-ccd4-4699-b157-922b749dc3a7",
+    "event": "source_fail",
+    "source": "vault://89Uw7opn4D3f5BYp",
+    "contentId": 12929,
+    "reason": "init_error",
+    "timestamp": "2025-10-31T17:22:39.198Z"
+  },
+  {
+    "id": "59fca617-e5d5-4a26-8e3e-a7d9831c1900",
+    "event": "manual_retry",
+    "source": "vault://89Uw7opn4D3f5BYp",
+    "contentId": 12929,
+    "reason": null,
+    "timestamp": "2025-10-31T17:22:34.421Z"
+  },
+  {
+    "id": "2de71cd6-3360-4467-ac68-01da4381a872",
+    "event": "all_sources_failed",
+    "source": "",
+    "contentId": 12929,
+    "reason": null,
+    "timestamp": "2025-10-31T17:22:33.209Z"
+  },
+  {
+    "id": "4dff5088-480c-45bc-8b97-146f7110f135",
+    "event": "source_fail",
+    "source": "vault://89Uw7opn4D3f5BYp",
+    "contentId": 12929,
+    "reason": "precheck_failed",
+    "timestamp": "2025-10-31T17:22:33.199Z"
+  },
+  {
+    "id": "2e3dfdb1-4129-495c-a563-c63f8ed17425",
+    "event": "play_start",
+    "source": "vault://lep-xJ_srQWu_RMr",
+    "contentId": 3,
+    "reason": null,
+    "timestamp": "2025-10-31T17:02:25.510Z"
+  },
+  {
+    "id": "a91ff692-c7ca-4ac0-8567-f618652a6d4b",
+    "event": "play_start",
+    "source": "vault://_c9KU2tM1F8Bcd5n",
+    "contentId": 4,
+    "reason": null,
+    "timestamp": "2025-10-31T17:02:10.752Z"
+  },
+  {
+    "id": "450fe2a0-98b5-451e-930a-642f453940e5",
+    "event": "all_sources_failed",
+    "source": "",
+    "contentId": 838,
+    "reason": null,
+    "timestamp": "2025-10-31T17:02:00.513Z"
+  },
+  {
+    "id": "46917830-dc4a-495d-949e-a7f198b4a782",
+    "event": "source_fail",
+    "source": "vault://b1LfBDXeNSS4dqw7",
+    "contentId": 838,
+    "reason": "init_error",
+    "timestamp": "2025-10-31T17:02:00.507Z"
+  },
+  {
+    "id": "a1c580a2-bbc2-4aa5-86d7-271d994bb45e",
+    "event": "all_sources_failed",
+    "source": "",
+    "contentId": 864,
+    "reason": null,
+    "timestamp": "2025-10-31T17:01:39.663Z"
+  },
+  {
+    "id": "ba0947bc-9cd2-485b-bdc1-756afff21983",
+    "event": "source_fail",
+    "source": "vault://ZC283LCpFZ43s8U_",
+    "contentId": 864,
+    "reason": "init_error",
+    "timestamp": "2025-10-31T17:01:39.659Z"
+  },
+  {
+    "id": "274f67d6-55a5-400e-8107-32d0cf70ac1a",
+    "event": "all_sources_failed",
+    "source": "",
+    "contentId": 13179,
+    "reason": null,
+    "timestamp": "2025-10-31T17:01:28.125Z"
+  },
+  {
+    "id": "7984d2f7-159a-4be7-ac90-4de9c7a315db",
+    "event": "source_fail",
+    "source": "vault://48Gt6ew5zQ9m4FcO",
+    "contentId": 13179,
+    "reason": "init_error",
+    "timestamp": "2025-10-31T17:01:28.121Z"
+  },
+  {
+    "id": "10bee825-b841-4b4a-8e90-0eed2b8ee968",
+    "event": "all_sources_failed",
+    "source": "",
+    "contentId": 13178,
+    "reason": null,
+    "timestamp": "2025-10-31T17:01:21.794Z"
+  },
+  {
+    "id": "9204d118-8f17-471f-8f9f-be4c92addc9a",
+    "event": "source_fail",
+    "source": "vault://PDJmC7a61gYcxZyx",
+    "contentId": 13178,
+    "reason": "timeout",
+    "timestamp": "2025-10-31T17:01:21.751Z"
+  },
+  {
+    "id": "d4db3e48-d20c-473a-a5e4-80714f21e426",
+    "event": "all_sources_failed",
+    "source": "",
+    "contentId": 13178,
+    "reason": null,
+    "timestamp": "2025-10-31T17:01:20.225Z"
+  },
+  {
+    "id": "1b7411be-14b2-4460-9fd6-156459f269f2",
+    "event": "source_fail",
+    "source": "vault://PDJmC7a61gYcxZyx",
+    "contentId": 13178,
+    "reason": "init_error",
+    "timestamp": "2025-10-31T17:01:20.210Z"
+  },
+  {
+    "id": "de8e9fbc-8221-4995-a747-1e71563c7231",
+    "event": "all_sources_failed",
+    "source": "",
+    "contentId": 12934,
+    "reason": null,
+    "timestamp": "2025-10-31T17:00:55.401Z"
+  },
+  {
+    "id": "a685c8af-c583-4bbb-b733-016883ed94fc",
+    "event": "source_fail",
+    "source": "vault://2TgSiIYAeqgGupMF",
+    "contentId": 12934,
+    "reason": "precheck_failed",
+    "timestamp": "2025-10-31T17:00:55.399Z"
+  },
+  {
+    "id": "8972fbb5-ead3-4560-9b1c-ebce3f2133df",
+    "event": "all_sources_failed",
+    "source": "",
+    "contentId": 12941,
+    "reason": null,
+    "timestamp": "2025-10-31T17:00:14.544Z"
+  },
+  {
+    "id": "c21fd4f4-51ad-4727-908e-913f75c65fae",
+    "event": "source_fail",
+    "source": "vault://7BS31-FtCDVCJfzP",
+    "contentId": 12941,
+    "reason": "precheck_failed",
+    "timestamp": "2025-10-31T17:00:14.532Z"
+  },
+  {
+    "id": "448b7313-277b-47e3-be1a-2e045e33beea",
+    "event": "all_sources_failed",
+    "source": "",
+    "contentId": 311,
+    "reason": null,
+    "timestamp": "2025-10-31T16:48:12.817Z"
+  },
+  {
+    "id": "0dede4ce-9413-4a71-a47f-3203c50eb335",
+    "event": "source_fail",
+    "source": "vault://BBisUNZTALq19slj",
+    "contentId": 311,
+    "reason": "precheck_failed",
+    "timestamp": "2025-10-31T16:48:12.811Z"
+  },
+  {
+    "id": "f1863e83-8e34-4524-852f-a27301f80fb5",
+    "event": "all_sources_failed",
+    "source": "",
+    "contentId": 65696,
+    "reason": null,
+    "timestamp": "2025-10-31T16:47:30.560Z"
+  },
+  {
+    "id": "1fffd7d5-f7ec-4c78-9bd7-7381750af860",
+    "event": "source_fail",
+    "source": "vault://G8bmOcc41HKBU9y9",
+    "contentId": 65696,
+    "reason": "precheck_failed",
+    "timestamp": "2025-10-31T16:47:30.558Z"
+  },
+  {
+    "id": "0defbea7-e146-4a7c-99ff-190c1b2413bf",
+    "event": "all_sources_failed",
+    "source": "",
+    "contentId": 12939,
+    "reason": null,
+    "timestamp": "2025-10-31T16:47:09.584Z"
+  },
+  {
+    "id": "55ac264e-6482-416c-9405-c886506f9d16",
+    "event": "source_fail",
+    "source": "vault://XlBia566cAvvPayi",
+    "contentId": 12939,
+    "reason": "precheck_failed",
+    "timestamp": "2025-10-31T16:47:09.581Z"
+  },
+  {
+    "id": "f350112d-f0ac-4e89-91e6-19300855c3dc",
+    "event": "source_fail",
+    "source": "vault://KqwU2nKf6ItuD3A3",
+    "contentId": 187601,
+    "reason": "precheck_failed",
+    "timestamp": "2025-10-31T16:45:29.260Z"
+  },
+  {
+    "id": "777499cc-0900-4404-a1f7-8cdaf39dc554",
+    "event": "all_sources_failed",
+    "source": "",
+    "contentId": 187601,
+    "reason": null,
+    "timestamp": "2025-10-31T16:45:29.254Z"
+  },
+  {
+    "id": "81c2d717-892d-4122-b81d-568db0157918",
+    "event": "all_sources_failed",
+    "source": "",
+    "contentId": 148,
+    "reason": null,
+    "timestamp": "2025-10-31T16:37:27.782Z"
+  },
+  {
+    "id": "456b7049-628b-4a00-abc5-063bea2c2061",
+    "event": "source_fail",
+    "source": "vault://sXvWT84y6pnrxINM",
+    "contentId": 148,
+    "reason": "precheck_failed",
+    "timestamp": "2025-10-31T16:37:27.778Z"
+  },
+  {
+    "id": "1afe4422-4e8b-40a3-9175-d7b770a8b0ac",
+    "event": "all_sources_failed",
+    "source": "",
+    "contentId": 800,
+    "reason": null,
+    "timestamp": "2025-10-31T16:36:13.652Z"
+  },
+  {
+    "id": "be9777aa-606a-47f2-b933-f4dcc367146a",
+    "event": "source_fail",
+    "source": "vault://FF-7vdf__LXkQqos",
+    "contentId": 800,
+    "reason": "timeout",
+    "timestamp": "2025-10-31T16:36:13.645Z"
+  },
+  {
+    "id": "5e113510-6d75-47cc-a919-5b67afb29a1d",
+    "event": "all_sources_failed",
+    "source": "",
+    "contentId": 800,
+    "reason": null,
+    "timestamp": "2025-10-31T16:36:10.967Z"
+  },
+  {
+    "id": "d4032871-6623-4c4b-94a7-48de3c0c9df0",
+    "event": "source_fail",
+    "source": "vault://FF-7vdf__LXkQqos",
+    "contentId": 800,
+    "reason": "init_error",
+    "timestamp": "2025-10-31T16:36:10.964Z"
+  },
+  {
+    "id": "6fd72b72-cb7b-4a69-ab26-4f11587a15cf",
+    "event": "all_sources_failed",
+    "source": "",
+    "contentId": 801,
+    "reason": null,
+    "timestamp": "2025-10-31T16:35:58.614Z"
+  },
+  {
+    "id": "5d1588f4-803f-4361-ad49-4d1ebce5ad4b",
+    "event": "source_fail",
+    "source": "vault://MnkqXhuzdf20k4fl",
+    "contentId": 801,
+    "reason": "init_error",
+    "timestamp": "2025-10-31T16:35:58.604Z"
+  },
+  {
+    "id": "7d4e2de3-0b1e-48f1-af06-9fc1269dde8f",
+    "event": "all_sources_failed",
+    "source": "",
+    "contentId": 1118,
+    "reason": null,
+    "timestamp": "2025-10-31T16:29:48.779Z"
+  },
+  {
+    "id": "56305a50-8aed-41cd-922e-8b4c7f1a48ea",
+    "event": "source_fail",
+    "source": "vault://lgykI4TSaypdSWS9",
+    "contentId": 1118,
+    "reason": "init_error",
+    "timestamp": "2025-10-31T16:29:48.737Z"
+  },
+  {
+    "id": "4318946b-1d46-427f-a93c-f58fc90cfc28",
+    "event": "all_sources_failed",
+    "source": "",
+    "contentId": 1118,
+    "reason": null,
+    "timestamp": "2025-10-31T16:29:48.623Z"
+  },
+  {
+    "id": "ac94aeb5-86d4-4541-adf7-2faeff2ac5a2",
+    "event": "source_fail",
+    "source": "vault://lgykI4TSaypdSWS9",
+    "contentId": 1118,
+    "reason": "timeout",
+    "timestamp": "2025-10-31T16:29:48.619Z"
+  },
+  {
+    "id": "91c09a8f-7b4e-4ef0-9e0b-e73c796ee12b",
+    "event": "play_start",
+    "source": "vault://F0mShENm6zb96RAW",
+    "contentId": 757,
+    "reason": null,
+    "timestamp": "2025-10-30T16:59:48.027Z"
+  },
+  {
+    "id": "f6a5dc95-1adb-4e02-a41e-526d67cec616",
+    "event": "play_start",
+    "source": "vault://-2tU3N9foDbW0VyC",
+    "contentId": 758,
+    "reason": null,
+    "timestamp": "2025-10-30T16:59:35.232Z"
+  },
+  {
+    "id": "5e9bf772-95a7-4efb-9ed0-f6aa32fac0a2",
+    "event": "all_sources_failed",
+    "source": "",
+    "contentId": 951,
+    "reason": null,
+    "timestamp": "2025-10-30T16:41:02.655Z"
+  },
+  {
+    "id": "95b91b10-5678-4232-8785-de61839638fe",
+    "event": "source_fail",
+    "source": "vault://1ks11s_zzUZbLrrI",
+    "contentId": 951,
+    "reason": "precheck_failed",
+    "timestamp": "2025-10-30T16:41:02.649Z"
+  },
+  {
+    "id": "71784df9-aeac-4d2d-952e-89695a01a35f",
+    "event": "all_sources_failed",
+    "source": "",
+    "contentId": 11,
+    "reason": null,
+    "timestamp": "2025-10-30T16:40:49.839Z"
+  },
+  {
+    "id": "52679d41-798e-4076-95d0-623fb0b69d10",
+    "event": "source_fail",
+    "source": "vault://IHU35j_dYvQxb0s1",
+    "contentId": 11,
+    "reason": "init_error",
+    "timestamp": "2025-10-30T16:40:49.777Z"
+  },
+  {
+    "id": "be715a3f-fb3d-4f9f-a966-0f9484848684",
+    "event": "all_sources_failed",
+    "source": "",
+    "contentId": 9,
+    "reason": null,
+    "timestamp": "2025-10-30T16:40:41.407Z"
+  },
+  {
+    "id": "5681e7c3-d7c8-4f47-9f32-e6a3ae30e171",
+    "event": "source_fail",
+    "source": "vault://ua7wBYH6AeREGGBZ",
+    "contentId": 9,
+    "reason": "timeout",
+    "timestamp": "2025-10-30T16:40:41.405Z"
+  },
+  {
+    "id": "4d89a62d-83e0-48c9-86c5-667b1bec3377",
+    "event": "all_sources_failed",
+    "source": "",
+    "contentId": 9,
+    "reason": null,
+    "timestamp": "2025-10-30T16:40:39.831Z"
+  },
+  {
+    "id": "252495b9-e71e-41b4-a2eb-3e1f5f43fad8",
+    "event": "source_fail",
+    "source": "vault://ua7wBYH6AeREGGBZ",
+    "contentId": 9,
+    "reason": "init_error",
+    "timestamp": "2025-10-30T16:40:39.818Z"
+  },
+  {
+    "id": "53eb1d6c-dcab-4f9c-bb02-e9a7ef79a589",
+    "event": "all_sources_failed",
+    "source": "",
+    "contentId": 664,
+    "reason": null,
+    "timestamp": "2025-10-30T16:36:22.730Z"
+  },
+  {
+    "id": "25cc5b39-3b8b-4636-baa6-d86d702994d4",
+    "event": "source_fail",
+    "source": "vault://L4Sr6FNR50y6GAVT",
+    "contentId": 664,
+    "reason": "timeout",
+    "timestamp": "2025-10-30T16:36:22.702Z"
+  },
+  {
+    "id": "bb9b1fc2-2e49-44d8-be92-fb75c6d622af",
+    "event": "all_sources_failed",
+    "source": "",
+    "contentId": 691,
+    "reason": null,
+    "timestamp": "2025-10-30T16:35:11.182Z"
+  },
+  {
+    "id": "e2927564-8e65-4b0a-8479-46cb6218f3b0",
+    "event": "source_fail",
+    "source": "vault://y6zdMZGpYG42HgN6",
+    "contentId": 691,
+    "reason": "init_error",
+    "timestamp": "2025-10-30T16:35:11.141Z"
+  },
+  {
+    "id": "0c88e76c-ffb8-4dd5-bc07-73209835d801",
+    "event": "all_sources_failed",
+    "source": "",
+    "contentId": 153,
+    "reason": null,
+    "timestamp": "2025-10-30T16:35:05.140Z"
+  },
+  {
+    "id": "3826c0fe-dd05-4d18-a551-f2a4c6f6188b",
+    "event": "source_fail",
+    "source": "vault://IU1iqwSlzkreJHrC",
+    "contentId": 153,
+    "reason": "precheck_failed",
+    "timestamp": "2025-10-30T16:35:05.138Z"
+  },
+  {
+    "id": "54961a86-9b23-4551-9e89-84315e00251b",
+    "event": "all_sources_failed",
+    "source": "",
+    "contentId": 690,
+    "reason": null,
+    "timestamp": "2025-10-30T16:34:55.862Z"
+  },
+  {
+    "id": "dd6f341e-fb99-473e-8cbd-189739245e0d",
+    "event": "source_fail",
+    "source": "vault://xSyCk8uI3V_NHow7",
+    "contentId": 690,
+    "reason": "timeout",
+    "timestamp": "2025-10-30T16:34:55.860Z"
+  },
+  {
+    "id": "6b390a58-1a42-4de1-bbfb-f33729d372d0",
+    "event": "all_sources_failed",
+    "source": "",
+    "contentId": 666,
+    "reason": null,
+    "timestamp": "2025-10-30T16:34:34.105Z"
+  },
+  {
+    "id": "05e0192a-88f9-4e5d-8de7-c14dbb2b15b0",
+    "event": "source_fail",
+    "source": "vault://r_WQv0TT27GnH3iu",
+    "contentId": 666,
+    "reason": "timeout",
+    "timestamp": "2025-10-30T16:34:34.102Z"
+  },
+  {
+    "id": "ae845ec2-709e-4e8b-ba50-2db9e8239012",
+    "event": "all_sources_failed",
+    "source": "",
+    "contentId": 666,
+    "reason": null,
+    "timestamp": "2025-10-30T16:34:33.217Z"
+  },
+  {
+    "id": "7d38bd5b-2fa6-451b-8f50-6b8e19b987bd",
+    "event": "source_fail",
+    "source": "vault://r_WQv0TT27GnH3iu",
+    "contentId": 666,
+    "reason": "init_error",
+    "timestamp": "2025-10-30T16:34:33.215Z"
+  },
+  {
+    "id": "63795357-50bb-4c27-8779-f477c73ab092",
+    "event": "source_fail",
+    "source": "vault://y6zdMZGpYG42HgN6",
+    "contentId": 691,
+    "reason": "timeout",
+    "timestamp": "2025-10-30T16:34:27.947Z"
+  },
+  {
+    "id": "0dbf9450-8204-4e53-b61a-54224dd279a6",
+    "event": "all_sources_failed",
+    "source": "",
+    "contentId": 691,
+    "reason": null,
+    "timestamp": "2025-10-30T16:34:27.943Z"
+  },
+  {
+    "id": "3af1359e-9249-444c-a295-caa003402e36",
+    "event": "all_sources_failed",
+    "source": "",
+    "contentId": 691,
+    "reason": null,
+    "timestamp": "2025-10-30T16:34:25.545Z"
+  },
+  {
+    "id": "a36a48c4-761d-45ba-a0cf-3744fa66eef9",
+    "event": "source_fail",
+    "source": "vault://y6zdMZGpYG42HgN6",
+    "contentId": 691,
+    "reason": "init_error",
+    "timestamp": "2025-10-30T16:34:25.514Z"
+  },
+  {
+    "id": "89e8b89e-3a59-4487-a1b6-83ea59820552",
+    "event": "play_start",
+    "source": "vault://6HPRGQotkdSOIMN7",
+    "contentId": 664,
+    "reason": null,
+    "timestamp": "2025-10-30T16:33:35.790Z"
+  },
+  {
+    "id": "d39ef876-89e1-4ac5-bcb4-9c8d093ff2d3",
+    "event": "play_start",
+    "source": "vault://7H_CNKM1wmmbTsYi",
+    "contentId": 153,
+    "reason": null,
+    "timestamp": "2025-10-29T17:29:08.658Z"
+  },
+  {
+    "id": "c5f1447c-173e-4da3-ae39-27e947acc8be",
+    "event": "play_start",
+    "source": "vault://grci9KyA5s3LAgav",
+    "contentId": 689,
+    "reason": null,
+    "timestamp": "2025-10-29T17:28:50.989Z"
+  },
+  {
+    "id": "e0c38d4f-ead3-4382-8653-1d617250352c",
+    "event": "play_start",
+    "source": "vault://l-ruBXbVHEOEQM7j",
+    "contentId": 1020,
+    "reason": null,
+    "timestamp": "2025-10-29T17:28:43.294Z"
+  },
+  {
+    "id": "28c34560-131b-4072-b652-721a89af6ca2",
+    "event": "play_start",
+    "source": "vault://8JGTJkeIE75XKm0E",
+    "contentId": 153,
+    "reason": null,
+    "timestamp": "2025-10-29T17:20:12.144Z"
+  },
+  {
+    "id": "d33dfeb7-c3c4-492c-8ee3-2a905f40460e",
+    "event": "play_start",
+    "source": "vault://XeuNqHKKsB6biHsj",
+    "contentId": 1020,
+    "reason": null,
+    "timestamp": "2025-10-29T17:19:18.542Z"
+  },
+  {
+    "id": "65805f0a-74e4-45c4-987a-b36bc063cdef",
+    "event": "play_start",
+    "source": "vault://F_eXH72KoWI6IyUT",
+    "contentId": 153,
+    "reason": null,
+    "timestamp": "2025-10-29T17:17:32.872Z"
+  },
+  {
+    "id": "220504b0-55d2-43ee-9caa-d3aee3266433",
+    "event": "play_start",
+    "source": "vault://bFWuCxzOyhS-KqJN",
+    "contentId": 153,
+    "reason": null,
+    "timestamp": "2025-10-29T16:54:26.620Z"
+  },
+  {
+    "id": "c6b36ec2-314b-45da-b734-4c74693a68ba",
+    "event": "play_start",
+    "source": "vault://NWgui7xY2xdQ1wQp",
+    "contentId": 697,
+    "reason": null,
+    "timestamp": "2025-10-29T16:54:01.041Z"
+  },
+  {
+    "id": "4366f050-162c-4dd6-bb2a-edb52e8529df",
+    "event": "play_start",
+    "source": "vault://NWgui7xY2xdQ1wQp",
+    "contentId": 697,
+    "reason": null,
+    "timestamp": "2025-10-29T16:52:32.498Z"
+  },
+  {
+    "id": "d8d97db5-f85b-433f-8e34-1fa5afc2ad32",
+    "event": "all_sources_failed",
+    "source": "",
+    "contentId": 708,
+    "reason": null,
+    "timestamp": "2025-10-29T16:52:14.834Z"
+  },
+  {
+    "id": "fc8e9149-fa3b-4e6f-ab64-ec8b3b6fbcd9",
+    "event": "source_fail",
+    "source": "vault://Mt3Q3T_ada6Bm6TD",
+    "contentId": 708,
+    "reason": "timeout",
+    "timestamp": "2025-10-29T16:52:14.828Z"
+  },
+  {
+    "id": "779d2d19-87e0-431c-b183-b9d28f8d0005",
+    "event": "all_sources_failed",
+    "source": "",
+    "contentId": 708,
+    "reason": null,
+    "timestamp": "2025-10-29T16:52:12.300Z"
+  },
+  {
+    "id": "a3310333-98ae-4f95-a20f-6ad0240fc0a5",
+    "event": "source_fail",
+    "source": "vault://Mt3Q3T_ada6Bm6TD",
+    "contentId": 708,
+    "reason": "init_error",
+    "timestamp": "2025-10-29T16:52:12.290Z"
+  },
+  {
+    "id": "02f48f1b-cf84-4235-87b4-d3a188f12b5a",
+    "event": "all_sources_failed",
+    "source": "",
+    "contentId": 181,
+    "reason": null,
+    "timestamp": "2025-10-29T16:52:00.641Z"
+  },
+  {
+    "id": "b880ea29-3749-43f3-8239-ea0e2958e3f3",
+    "event": "source_fail",
+    "source": "vault://Z1vUoZSg9EdPp3aB",
+    "contentId": 181,
+    "reason": "timeout",
+    "timestamp": "2025-10-29T16:52:00.639Z"
+  },
+  {
+    "id": "4713ee87-f4b1-46e3-b01d-0dd97146c484",
+    "event": "play_start",
+    "source": "vault://8IpPaGJbQQurhIiM",
+    "contentId": 1020,
+    "reason": null,
+    "timestamp": "2025-10-29T16:51:58.156Z"
+  },
+  {
+    "id": "b97208d1-7c8d-46a4-a5cb-e92bff5a5b7b",
+    "event": "all_sources_failed",
+    "source": "",
+    "contentId": 181,
+    "reason": null,
+    "timestamp": "2025-10-29T16:51:57.945Z"
+  },
+  {
+    "id": "c31f5145-5b71-44a4-a325-e15e4d6b0e26",
+    "event": "source_fail",
+    "source": "vault://Z1vUoZSg9EdPp3aB",
+    "contentId": 181,
+    "reason": "init_error",
+    "timestamp": "2025-10-29T16:51:57.941Z"
+  },
+  {
+    "id": "f4dc48cf-749e-49af-a76c-3a9d9064fcf8",
+    "event": "all_sources_failed",
+    "source": "",
+    "contentId": 1020,
+    "reason": null,
+    "timestamp": "2025-10-29T16:51:56.625Z"
+  },
+  {
+    "id": "6692b708-2e34-4f0f-8b46-cfac55b9ae26",
+    "event": "source_fail",
+    "source": "vault://8IpPaGJbQQurhIiM",
+    "contentId": 1020,
+    "reason": "timeout",
+    "timestamp": "2025-10-29T16:51:56.611Z"
+  },
+  {
+    "id": "230621b5-803b-4218-ae8f-60c116853a10",
+    "event": "all_sources_failed",
+    "source": "",
+    "contentId": 153,
+    "reason": null,
+    "timestamp": "2025-10-29T16:51:41.842Z"
+  },
+  {
+    "id": "fa8d1a17-2380-4190-8d96-2dce9b11a12e",
+    "event": "source_fail",
+    "source": "vault://JoO7x0xu_O7xz5eC",
+    "contentId": 153,
+    "reason": "timeout",
+    "timestamp": "2025-10-29T16:51:41.817Z"
+  },
+  {
+    "id": "afe5526a-8f56-486a-8eea-d118c0051e05",
+    "event": "all_sources_failed",
+    "source": "",
+    "contentId": 153,
+    "reason": null,
+    "timestamp": "2025-10-29T16:51:39.869Z"
+  },
+  {
+    "id": "ffed508c-1041-45e6-aa03-e49c52029375",
+    "event": "source_fail",
+    "source": "vault://JoO7x0xu_O7xz5eC",
+    "contentId": 153,
+    "reason": "init_error",
+    "timestamp": "2025-10-29T16:51:39.854Z"
+  },
+  {
+    "id": "5c7144ff-1e52-43a9-9958-adcc72091d61",
+    "event": "play_start",
+    "source": "vault://LkyLI1E9gwBJzuER",
+    "contentId": 1020,
+    "reason": null,
+    "timestamp": "2025-10-29T16:49:34.975Z"
+  },
+  {
+    "id": "347622c8-4cff-4822-b145-6a74f9038b18",
+    "event": "play_start",
+    "source": "vault://LkyLI1E9gwBJzuER",
+    "contentId": 1020,
+    "reason": null,
+    "timestamp": "2025-10-29T16:49:13.145Z"
+  },
+  {
+    "id": "961696ea-70fb-4025-90b3-0748bf95a4d4",
+    "event": "play_start",
+    "source": "vault://CISzz-D8vs8hdw3l",
+    "contentId": 754,
+    "reason": null,
+    "timestamp": "2025-10-29T15:59:09.922Z"
+  },
+  {
+    "id": "e320e27b-9fdf-49a0-af8e-a2ca69e91fa0",
+    "event": "play_start",
+    "source": "vault://CJNMRXGzqOs-K-xP",
+    "contentId": 753,
+    "reason": null,
+    "timestamp": "2025-10-29T15:58:16.673Z"
+  },
+  {
+    "id": "1530ea5b-e29e-4e7b-b14d-ad99127e2697",
+    "event": "all_sources_failed",
+    "source": "",
+    "contentId": 939,
+    "reason": null,
+    "timestamp": "2025-10-29T15:55:33.561Z"
+  },
+  {
+    "id": "426849aa-2612-4db4-9768-829e1805a737",
+    "event": "source_fail",
+    "source": "vault://qFFgXOfym99_OcH2",
+    "contentId": 939,
+    "reason": "precheck_failed",
+    "timestamp": "2025-10-29T15:55:33.547Z"
+  },
+  {
+    "id": "f9a616b2-f9d2-45c6-b322-c689f14f61e6",
+    "event": "play_start",
+    "source": "vault://-9ufeieQk8JOTQLF",
+    "contentId": 1060,
+    "reason": null,
+    "timestamp": "2025-10-29T15:52:09.322Z"
+  },
+  {
+    "id": "17d5ee7c-a25e-4243-95ec-7e6b755c78a9",
+    "event": "play_start",
+    "source": "vault://RdnSiCkiPq2s_lbf",
+    "contentId": 695,
+    "reason": null,
+    "timestamp": "2025-10-29T15:51:53.792Z"
+  },
+  {
+    "id": "025ec441-bd4d-4847-a1fd-477040179e50",
+    "event": "play_start",
+    "source": "vault://e11xfUFg80svkxTx",
+    "contentId": 694,
+    "reason": null,
+    "timestamp": "2025-10-29T15:51:35.890Z"
+  },
+  {
+    "id": "10807a7c-1edf-491e-8d30-5d27cd9bc349",
+    "event": "all_sources_failed",
+    "source": "",
+    "contentId": 1020,
+    "reason": null,
+    "timestamp": "2025-10-29T15:51:18.502Z"
+  },
+  {
+    "id": "21f1aa46-21e6-4cbc-a57a-30f2ba680ebe",
+    "event": "source_fail",
+    "source": "vault://4hd1nJHgDx4jdODv",
+    "contentId": 1020,
+    "reason": "timeout",
+    "timestamp": "2025-10-29T15:51:18.496Z"
+  },
+  {
+    "id": "93b78fdb-ebdb-408e-9960-453973a1f606",
+    "event": "play_start",
+    "source": "vault://4hd1nJHgDx4jdODv",
+    "contentId": 1020,
+    "reason": null,
+    "timestamp": "2025-10-29T15:51:10.587Z"
+  },
+  {
+    "id": "9dde4486-55b0-45ac-939d-de0de4ebbcb0",
+    "event": "all_sources_failed",
+    "source": "",
+    "contentId": 1020,
+    "reason": null,
+    "timestamp": "2025-10-29T15:51:07.563Z"
+  },
+  {
+    "id": "88957a80-4740-4d4a-8e76-8291b2d2811e",
+    "event": "source_fail",
+    "source": "vault://4hd1nJHgDx4jdODv",
+    "contentId": 1020,
+    "reason": "timeout",
+    "timestamp": "2025-10-29T15:51:07.559Z"
+  }
+]

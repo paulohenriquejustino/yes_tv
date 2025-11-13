@@ -3,8 +3,24 @@
     "id": "client-1",
     "name": "Cliente Demo",
     "phone": "+5511999999999",
-    "status": "pending",
+    "status": "active",
     "createdAt": "2024-03-01T12:00:00.000Z",
+    "validatedAt": "2025-10-29T15:30:59.424Z"
+  },
+  {
+    "id": "f7e2f393-baf3-4aa8-9c67-5c2245442283",
+    "name": "Cliente 32998078703",
+    "phone": "32998078703",
+    "status": "active",
+    "createdAt": "2025-10-29T16:14:08.445Z",
+    "validatedAt": "2025-10-31T16:33:37.425Z"
+  },
+  {
+    "id": "f1a87981-bc31-4736-8d40-f70e7af0ba03",
+    "name": "Cliente 47996648569",
+    "phone": "47996648569",
+    "status": "pending",
+    "createdAt": "2025-10-29T16:15:20.867Z",
     "validatedAt": null
   }
 ]
