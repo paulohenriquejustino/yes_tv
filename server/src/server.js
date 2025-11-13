@@ -16,7 +16,26 @@ const BODY_LIMIT = process.env.BODY_LIMIT || "512mb";
 
 const app = express();
 
-app.use(cors());
+const allowedOrigins = [
+  "https://yes-tv-ab8fb.web.app",
+  "https://api.blutv.online",
+  "http://api.blutv.online",
+];
+
+app.use(
+  cors({
+    origin(origin, callback) {
+      if (!origin || allowedOrigins.includes(origin)) {
+        return callback(null, true);
+      }
+      return callback(new Error("Not allowed by CORS"));
+    },
+    methods: ["GET", "POST", "PATCH", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+    credentials: false,
+  })
+);
+app.options("*", cors());
 app.use(
   express.json({
     limit: BODY_LIMIT,
