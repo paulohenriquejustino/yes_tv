@@ -11,10 +11,22 @@ const PORT = process.env.PORT || 3000;
 const OTP_TTL_MS = 5 * 60 * 1000;
 const MAX_LOG_ENTRIES = 200;
 
+const BODY_LIMIT = process.env.BODY_LIMIT || "150mb";
+
 const app = express();
 
 app.use(cors());
-app.use(express.json({ limit: "2mb" }));
+app.use(
+  express.json({
+    limit: BODY_LIMIT,
+  })
+);
+app.use(
+  express.urlencoded({
+    extended: true,
+    limit: BODY_LIMIT,
+  })
+);
 app.use(morgan("dev"));
 
 const otpCache = new Map();
