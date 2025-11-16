@@ -5,12 +5,19 @@ const cors = require("cors");
 const morgan = require("morgan");
 const crypto = require("crypto");
 const os = require("os");
+const { setTimeout: delay } = require("timers/promises");
 
-const { readJson, writeJson } = require("./storage");
+const {
+  readJson,
+  writeJson,
+  loadImportLogs,
+  saveImportLogs,
+} = require("./storage");
 
 const PORT = process.env.PORT || 3000;
 const OTP_TTL_MS = 5 * 60 * 1000;
 const MAX_LOG_ENTRIES = 200;
+const MAX_IMPORT_ENTRIES = 40;
 
 const BODY_LIMIT = process.env.BODY_LIMIT || "512mb";
 
@@ -174,6 +181,14 @@ function saveLogs(items) {
   writeJson("logs.json", items);
 }
 
+function loadImportHistory() {
+  return loadImportLogs();
+}
+
+function saveImportHistory(items) {
+  saveImportLogs(items);
+}
+
 function ensureClientByPhone(phone) {
   const normalized = phone.trim();
   if (!normalized) {
@@ -196,6 +211,91 @@ function ensureClientByPhone(phone) {
   return client;
 }
 
+function registerImportLog(entry) {
+  const existing = loadImportHistory();
+  existing.unshift(entry);
+  if (existing.length > MAX_IMPORT_ENTRIES) {
+    existing.length = MAX_IMPORT_ENTRIES;
+  }
+  saveImportHistory(existing);
+  return entry;
+}
+
+function sanitizeUrl(raw) {
+  if (typeof raw !== "string") {
+    return "";
+  }
+  let value = raw.trim();
+  if (!value) return "";
+  if (!/^[a-zA-Z][a-zA-Z\d+\-.]*:\/\//.test(value)) {
+    value = `https://${value}`;
+  }
+  return value;
+}
+
+async function probeSourceUrl(rawUrl) {
+  const url = sanitizeUrl(rawUrl);
+  let parsed;
+  try {
+    parsed = new URL(url);
+  } catch (_) {
+    return { ok: false, reason: "invalid_url" };
+  }
+
+  const protocol = parsed.protocol.toLowerCase();
+  if (protocol !== "http:" && protocol !== "https:") {
+    return { ok: false, reason: "unsupported_protocol" };
+  }
+
+  const attempts = ["HEAD", "GET"];
+  let lastFailure = { ok: false, reason: "unknown_error" };
+
+  for (const method of attempts) {
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 5000);
+    try {
+      const response = await fetch(parsed, {
+        method,
+        redirect: "follow",
+        signal: controller.signal,
+        headers: {
+          "user-agent": "YES-TV-Probe/1.0",
+          accept: "*/*",
+        },
+      });
+      clearTimeout(timeoutId);
+      if (response.status >= 200 && response.status < 400) {
+        return {
+          ok: true,
+          status: response.status,
+          finalUrl: response.url,
+          redirected: response.redirected,
+          method,
+          contentType: response.headers.get("content-type"),
+        };
+      }
+      lastFailure = {
+        ok: false,
+        status: response.status,
+        reason: `http_${response.status}`,
+      };
+    } catch (error) {
+      clearTimeout(timeoutId);
+      const reason =
+        error.name === "AbortError" ? "timeout" : "network_error";
+      lastFailure = {
+        ok: false,
+        reason,
+        error: error.message,
+      };
+    }
+    // Pequena pausa para evitar bloqueios por hosts mais sensíveis
+    await delay(20);
+  }
+
+  return lastFailure;
+}
+
 app.get("/health", (_req, res) => {
   res.json({ status: "ok" });
 });
@@ -210,6 +310,29 @@ app.get("/catalog", (_req, res) => {
 
 app.get("/admin/catalog", (_req, res) => {
   res.json({ items: loadCatalog() });
+});
+
+app.get("/admin/imports", (_req, res) => {
+  res.json(loadImportHistory());
+});
+
+app.post("/admin/sources/validate", async (req, res) => {
+  const rawUrl = req.body?.url;
+  if (!rawUrl || typeof rawUrl !== "string") {
+    return res
+      .status(400)
+      .json({ ok: false, reason: "missing_url" });
+  }
+  try {
+    const result = await probeSourceUrl(rawUrl);
+    res.json(result);
+  } catch (error) {
+    res.status(500).json({
+      ok: false,
+      reason: "validation_error",
+      error: error.message,
+    });
+  }
 });
 
 app.post("/admin/catalog", (req, res) => {
@@ -241,6 +364,23 @@ app.post("/admin/catalog", (req, res) => {
 app.delete("/admin/catalog", (_req, res) => {
   saveCatalog([]);
   res.json({ ok: true, total: 0 });
+});
+
+app.post("/admin/imports", (req, res) => {
+  const { source, success, items, message } = req.body ?? {};
+  if (!source || typeof success !== "boolean" || items == null) {
+    return res.status(400).json({ error: "Campos inválidos." });
+  }
+  const entry = {
+    id: crypto.randomUUID(),
+    timestamp: new Date().toISOString(),
+    source: source.toString(),
+    success,
+    items: Number(items) || 0,
+    message: message?.toString() ?? null,
+  };
+  registerImportLog(entry);
+  res.status(201).json(entry);
 });
 
 app.get("/logs/playback", (_req, res) => {

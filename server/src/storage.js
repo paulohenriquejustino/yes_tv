@@ -36,7 +36,17 @@ function writeJson(filename, data) {
   fs.renameSync(tempPath, filePath);
 }
 
+function loadImportLogs() {
+  return readJson("import_logs.json", []);
+}
+
+function saveImportLogs(items) {
+  writeJson("import_logs.json", items);
+}
+
 module.exports = {
   readJson,
   writeJson,
+  loadImportLogs,
+  saveImportLogs,
 };
